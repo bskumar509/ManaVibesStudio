@@ -51,20 +51,20 @@
     {
       "id": "employee-avatar-1",
       "description": "Avatar for Alex Johnson, Lead Designer.",
-      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMGJ1c2luZXNzfGVufDB8fHx8MTc2MTUzNTU1MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "business portrait"
+      "imageUrl": "https://images.unsplash.com/photo-1697059172415-f1e08f9151bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhbmltZSUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MTA1NjY5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "anime portrait"
     },
     {
       "id": "employee-avatar-2",
       "description": "Avatar for Maria Garcia, Project Manager.",
-      "imageUrl": "https://images.unsplash.com/photo-1554780353-348c4b141a49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdCUyMGJ1c2luZXNzfGVufDB8fHx8MTc2MTUzNTU1MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "business portrait"
+      "imageUrl": "https://images.unsplash.com/photo-1673047233237-ada4e4c22076?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YW5pbWUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjEwNTY2OTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "anime portrait"
     },
     {
       "id": "employee-avatar-3",
       "description": "Avatar for James Smith, Lead Developer.",
-      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwb3J0cmFpdCUyMGJ1c2luZXNzfGVufDB8fHx8MTc2MTUzNTU1MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "business portrait"
+      "imageUrl": "https://images.unsplash.com/photo-1701282090823-1b6e5ea607db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhbmltZSUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MDkyOTA0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "anime portrait"
     }
   ]
 }
