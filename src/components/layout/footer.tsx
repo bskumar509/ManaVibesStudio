@@ -17,12 +17,12 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-secondary text-secondary-foreground">
+    <footer className="bg-secondary/50 text-secondary-foreground">
       <div className="container mx-auto max-w-7xl px-4 py-12 md:px-6">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-              <Zap className="h-6 w-6 text-primary" />
+              <Zap className="h-6 w-6 text-accent" />
               <span className="font-headline">Manavibes Studio</span>
             </Link>
             <p className="text-sm text-muted-foreground">
@@ -34,7 +34,7 @@ export function Footer() {
             <ul className="space-y-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-accent transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -45,7 +45,7 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
               {socialLinks.map((link) => (
-                <Link key={link.label} href={link.href} className="text-muted-foreground hover:text-primary transition-colors">
+                <Link key={link.label} href={link.href} className="text-muted-foreground hover:text-accent transition-colors">
                   <link.icon className="h-5 w-5" />
                   <span className="sr-only">{link.label}</span>
                 </Link>

@@ -38,7 +38,7 @@ export function Header() {
     >
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-          <Zap className="h-6 w-6 text-primary" />
+          <Zap className="h-6 w-6 text-accent" />
           <span className="font-headline">Manavibes Studio</span>
         </Link>
 
@@ -47,7 +47,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-foreground/80 transition-colors hover:text-primary"
+              className="text-foreground/80 transition-colors hover:text-accent"
             >
               {link.label}
             </Link>
@@ -69,7 +69,7 @@ export function Header() {
             <SheetContent side="left" className="w-[300px] sm:w-[400px]">
               <div className="p-6">
                  <Link href="/" className="flex items-center gap-2 font-bold text-lg mb-8" onClick={() => setMobileMenuOpen(false)}>
-                  <Zap className="h-6 w-6 text-primary" />
+                  <Zap className="h-6 w-6 text-accent" />
                   <span className="font-headline">Manavibes Studio</span>
                 </Link>
                 <nav className="flex flex-col gap-6 text-lg font-medium">
@@ -78,7 +78,7 @@ export function Header() {
                       key={link.href}
                       href={link.href}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="text-foreground/80 transition-colors hover:text-primary"
+                      className="text-foreground/80 transition-colors hover:text-accent"
                     >
                       {link.label}
                     </Link>

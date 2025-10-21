@@ -51,7 +51,7 @@ const renderStars = (rating: number) => {
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="w-full py-20 md:py-32 bg-secondary">
+    <section id="testimonials" className="w-full py-20 md:py-32 bg-secondary/50">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
@@ -84,7 +84,7 @@ export function Testimonials() {
                                     width={80}
                                     height={80}
                                     data-ai-hint={avatar.imageHint}
-                                    className="rounded-full mb-4"
+                                    className="rounded-full mb-4 border-2 border-accent"
                                 />
                             )}
                             <p className="text-xl font-medium italic text-foreground/90">

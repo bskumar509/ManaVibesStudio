@@ -47,7 +47,7 @@ export function Contact() {
   }, [state, toast]);
 
   return (
-    <section id="contact" className="w-full py-20 md:py-32 bg-secondary">
+    <section id="contact" className="w-full py-20 md:py-32 bg-secondary/50">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
@@ -67,15 +67,15 @@ export function Contact() {
                 </p>
                 <div className="space-y-4">
                      <div className="flex items-center gap-4">
-                        <Phone className="h-5 w-5 text-primary" />
-                        <a href="tel:+1234567890" className="text-foreground hover:text-primary transition-colors">(123) 456-7890</a>
+                        <Phone className="h-5 w-5 text-accent" />
+                        <a href="tel:+1234567890" className="text-foreground hover:text-accent transition-colors">(123) 456-7890</a>
                      </div>
                       <div className="flex items-center gap-4">
-                        <Mail className="h-5 w-5 text-primary" />
-                        <a href="mailto:hello@manavibes.studio" className="text-foreground hover:text-primary transition-colors">hello@manavibes.studio</a>
+                        <Mail className="h-5 w-5 text-accent" />
+                        <a href="mailto:hello@manavibes.studio" className="text-foreground hover:text-accent transition-colors">hello@manavibes.studio</a>
                      </div>
                       <div className="flex items-start gap-4">
-                        <MapPin className="h-5 w-5 text-primary mt-1" />
+                        <MapPin className="h-5 w-5 text-accent mt-1" />
                         <p className="text-foreground">123 Creative Lane<br />Vibeville, 12345</p>
                      </div>
                 </div>

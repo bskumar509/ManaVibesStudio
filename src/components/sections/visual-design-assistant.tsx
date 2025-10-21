@@ -73,11 +73,11 @@ export function VisualDesignAssistant() {
   };
 
   return (
-    <section id="ai-assistant" className="w-full py-20 md:py-32 bg-background">
+    <section id="ai-assistant" className="w-full py-20 md:py-32 bg-transparent">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl flex items-center justify-center gap-2">
-            <Sparkles className="w-8 h-8 text-primary" />
+            <Sparkles className="w-8 h-8 text-accent" />
             Visual Design Assistant
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
@@ -86,7 +86,7 @@ export function VisualDesignAssistant() {
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
-          <Card>
+          <Card className="bg-background/50">
             <CardHeader>
               <CardTitle>1. Upload Your Assets</CardTitle>
               <CardDescription>Select one or more images (e.g., logos, product photos).</CardDescription>
@@ -118,7 +118,7 @@ export function VisualDesignAssistant() {
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="bg-background/50">
             <CardHeader>
               <CardTitle>2. Get AI-Powered Suggestions</CardTitle>
               <CardDescription>Here are some creative ideas for your brand's visuals.</CardDescription>
@@ -126,7 +126,7 @@ export function VisualDesignAssistant() {
             <CardContent>
               {suggestionState.isLoading ? (
                 <div className="flex items-center justify-center h-40">
-                  <Loader2 className="h-8 w-8 animate-spin text-primary" />
+                  <Loader2 className="h-8 w-8 animate-spin text-accent" />
                 </div>
               ) : suggestionState.error ? (
                 <div className="text-destructive-foreground bg-destructive p-4 rounded-md">{suggestionState.error}</div>
