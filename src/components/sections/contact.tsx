@@ -2,7 +2,7 @@
 
 import { useFormState, useFormStatus } from 'react-dom';
 import { submitContactForm, type ContactFormState } from '@/app/actions';
-import { useEffect, Suspense } from 'react';
+import { useEffect, Suspense, useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { useToast } from '@/hooks/use-toast';
 import { Button } from '@/components/ui/button';
@@ -41,6 +41,7 @@ function SubmitButton() {
 
 function ContactForm() {
   const [state, formAction] = useFormState(submitContactForm, initialState);
+  const formRef = useRef<HTMLFormElement>(null);
   const { toast } = useToast();
   const searchParams = useSearchParams();
   const serviceParam = searchParams.get('service');
@@ -52,6 +53,7 @@ function ContactForm() {
           title: 'Message Sent!',
           description: state.message,
         });
+        formRef.current?.reset();
       } else {
         toast({
           title: 'Error',
@@ -63,15 +65,15 @@ function ContactForm() {
   }, [state, toast]);
 
   return (
-    <form action={formAction} className="space-y-4">
+    <form ref={formRef} action={formAction} className="space-y-4">
       <div className="space-y-2">
         <Label htmlFor="name">Name</Label>
-        <Input id="name" name="name" placeholder="Your Name" />
+        <Input id="name" name="name" placeholder="Your Name" required />
         {state.errors?.name && <p className="text-sm font-medium text-destructive">{state.errors.name[0]}</p>}
       </div>
       <div className="space-y-2">
         <Label htmlFor="email">Email</Label>
-        <Input id="email" name="email" type="email" placeholder="your@email.com" />
+        <Input id="email" name="email" type="email" placeholder="your@email.com" required />
         {state.errors?.email && <p className="text-sm font-medium text-destructive">{state.errors.email[0]}</p>}
       </div>
        <div className="space-y-2">
@@ -94,7 +96,7 @@ function ContactForm() {
       </div>
       <div className="space-y-2">
         <Label htmlFor="message">Message</Label>
-        <Textarea id="message" name="message" placeholder="How can we help?" className="min-h-[120px]" />
+        <Textarea id="message" name="message" placeholder="How can we help?" className="min-h-[120px]" required />
         {state.errors?.message && <p className="text-sm font-medium text-destructive">{state.errors.message[0]}</p>}
       </div>
       <SubmitButton />

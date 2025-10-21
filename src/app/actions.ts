@@ -43,12 +43,31 @@ export async function submitContactForm(
     };
   }
   
-  // This is where you would integrate with a form service like Formspree
-  // or a backend to send an email. For this example, we'll log it.
-  console.log('Contact form submitted to mayamakers1@gmail.com:', validatedFields.data);
+  try {
+    const res = await fetch('https://formspree.io/f/mayamakers1@gmail.com', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
 
-  return {
-    message: 'Thank you for your message! We will get back to you soon.',
-    success: true,
-  };
+    if (res.ok) {
+      return {
+        message: 'Thank you for your message! We will get back to you soon.',
+        success: true,
+      };
+    } else {
+       return {
+        message: 'There was a problem sending your message. Please try again later.',
+        success: false,
+      };
+    }
+
+  } catch(e) {
+    return {
+      message: 'An unexpected error occurred. Please try again.',
+      success: false,
+    }
+  }
 }
