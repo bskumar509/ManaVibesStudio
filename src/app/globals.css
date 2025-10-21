@@ -52,6 +52,9 @@
   * {
     @apply border-border;
   }
+  html {
+    scroll-behavior: auto;
+  }
   body {
     @apply bg-background text-foreground;
     background-image: linear-gradient(to right, #000000, #1a2a45, #87CEEB);
