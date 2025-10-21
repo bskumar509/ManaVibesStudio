@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Zap, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Twitter, Linkedin, Instagram } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
     { href: "/", label: "Home" },
@@ -21,7 +22,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-              <Zap className="h-6 w-6 text-accent" />
+               <Image src="/logo.png" alt="ManaVibes Studio Logo" width={32} height={32} />
               <span className="font-headline">ManaVibes Studio</span>
             </Link>
             <p className="text-sm text-muted-foreground">

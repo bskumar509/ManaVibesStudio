@@ -5,8 +5,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Zap } from "lucide-react";
+import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -39,7 +40,7 @@ export function Header() {
     >
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-          <Zap className="h-6 w-6 text-accent" />
+          <Image src="/logo.png" alt="ManaVibes Studio Logo" width={32} height={32} />
           <span className="font-headline">ManaVibes Studio</span>
         </Link>
 
@@ -73,7 +74,7 @@ export function Header() {
             <SheetContent side="left" className="w-[300px] sm:w-[400px]">
               <div className="p-6">
                  <Link href="/" className="flex items-center gap-2 font-bold text-lg mb-8" onClick={() => setMobileMenuOpen(false)}>
-                  <Zap className="h-6 w-6 text-accent" />
+                  <Image src="/logo.png" alt="ManaVibes Studio Logo" width={32} height={32} />
                   <span className="font-headline">ManaVibes Studio</span>
                 </Link>
                 <nav className="flex flex-col gap-6 text-lg font-medium">
