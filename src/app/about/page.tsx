@@ -3,12 +3,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Employees } from "@/components/sections/employees";
 
 const logoCloud = [
-    { name: 'Company A', logo: 'https://via.placeholder.com/150x50?text=Logo+A' },
-    { name: 'Company B', logo: 'https://via.placeholder.com/150x50?text=Logo+B' },
-    { name: 'Company C', logo: 'https://via.placeholder.com/150x50?text=Logo+C' },
-    { name: 'Company D', logo: 'https://via.placeholder.com/150x50?text=Logo+D' },
-    { name: 'Company E', logo: 'https://via.placeholder.com/150x50?text=Logo+E' },
-    { name: 'Company F', logo: 'https://via.placeholder.com/150x50?text=Logo+F' },
+    { name: 'Company A', logo: 'https://picsum.photos/seed/a/150/50' },
+    { name: 'Company B', logo: 'https://picsum.photos/seed/b/150/50' },
+    { name: 'Company C', logo: 'https://picsum.photos/seed/c/150/50' },
+    { name: 'Company D', logo: 'https://picsum.photos/seed/d/150/50' },
+    { name: 'Company E', logo: 'https://picsum.photos/seed/e/150/50' },
+    { name: 'Company F', logo: 'https://picsum.photos/seed/f/150/50' },
 ];
 
 
@@ -63,6 +63,7 @@ export default function AboutPage() {
                                     alt={client.name}
                                     width={158}
                                     height={48}
+                                    data-ai-hint="logo"
                                 />
                             </div>
                         ))}
