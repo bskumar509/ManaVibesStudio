@@ -132,9 +132,6 @@ export default function ServicesPage() {
                          <h3 className="font-semibold text-lg">Deliverables:</h3>
                         <p className="mt-2 text-muted-foreground">{service.deliverables}</p>
                     </div>
-                  <Button asChild size="lg" className="mt-6 w-full">
-                    <Link href={`/contact?service=${encodeURIComponent(service.title)}`}>Get a Quote</Link>
-                  </Button>
                 </div>
               </div>
             </section>
