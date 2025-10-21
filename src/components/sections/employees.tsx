@@ -77,14 +77,6 @@ export function Employees() {
                             <CardTitle className="font-headline text-xl">{employee.name}</CardTitle>
                             <CardDescription className="mt-1 text-base text-accent">{employee.title}</CardDescription>
                             <p className="mt-3 text-sm text-muted-foreground">{employee.bio}</p>
-                            <div className="mt-4 flex justify-center space-x-4">
-                                <Link href={employee.social.twitter} className="text-muted-foreground hover:text-accent transition-colors">
-                                    <Twitter className="h-5 w-5" />
-                                </Link>
-                                <Link href={employee.social.linkedin} className="text-muted-foreground hover:text-accent transition-colors">
-                                    <Linkedin className="h-5 w-5" />
-                                </Link>
-                            </div>
                         </CardContent>
                     </Card>
                 </div>
