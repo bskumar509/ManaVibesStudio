@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
 
 const employeeData = [
