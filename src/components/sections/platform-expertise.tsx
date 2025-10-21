@@ -28,15 +28,31 @@ export function PlatformExpertise() {
             Expert-level proficiency across all major digital marketing platforms and tools.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-          {platforms.map((platform) => (
-            <Card key={platform.name} className="flex items-center justify-center p-6 bg-background/50">
-              <div className="flex items-center gap-4">
-                {platform.icon}
-                <span className="font-semibold">{platform.name}</span>
-              </div>
-            </Card>
-          ))}
+        <div className="mt-12 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+            <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll">
+                {platforms.map((platform) => (
+                    <li key={platform.name}>
+                        <Card className="flex items-center justify-center p-6 bg-background/50 min-w-[200px]">
+                            <div className="flex items-center gap-4">
+                                {platform.icon}
+                                <span className="font-semibold">{platform.name}</span>
+                            </div>
+                        </Card>
+                    </li>
+                ))}
+            </ul>
+             <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+                {platforms.map((platform) => (
+                    <li key={platform.name}>
+                        <Card className="flex items-center justify-center p-6 bg-background/50 min-w-[200px]">
+                            <div className="flex items-center gap-4">
+                                {platform.icon}
+                                <span className="font-semibold">{platform.name}</span>
+                            </div>
+                        </Card>
+                    </li>
+                ))}
+            </ul>
         </div>
       </div>
     </section>
