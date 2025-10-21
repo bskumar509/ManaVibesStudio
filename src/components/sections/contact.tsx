@@ -142,7 +142,7 @@ export function Contact() {
               </div>
               <div className="h-80 w-full">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122452.82494958316!2d80.3524959567995!3d16.30709970977464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a755cb1787785%3A0x9f7063462ff5f81e!2sGuntur%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1689582G"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122452.82494958316!2d80.3524959567995!3d16.30709970977464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a755cb1787785%3A0x9f7063462ff5f81e!2sGuntur%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1721056587570!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
