@@ -1,8 +1,14 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Search, Megaphone, Brush, Code, LineChart, Target } from "lucide-react";
+import { Search, Megaphone, Brush, Code, LineChart, Target, Image as ImageIcon, Video } from "lucide-react";
 import Link from "next/link";
 
 const servicesData = [
+  {
+    icon: <ImageIcon className="h-8 w-8 text-accent" />,
+    title: "Poster Design",
+    description: "Create eye-catching posters that grab attention and communicate your message effectively.",
+    href: "/services#poster-design"
+  },
   {
     icon: <Megaphone className="h-8 w-8 text-accent" />,
     title: "Social Media Marketing",
@@ -39,6 +45,12 @@ const servicesData = [
     description: "Tell your story through compelling content that captures attention, from blog posts to video production.",
     href: "/services#content-creation"
   },
+  {
+    icon: <Video className="h-8 w-8 text-accent" />,
+    title: "Video Editing",
+    description: "Transform your raw footage into polished, professional videos that tell your story.",
+    href: "/services#video-editing"
+  },
 ];
 
 export function Services() {
@@ -53,7 +65,7 @@ export function Services() {
             We offer a complete suite of digital marketing services to help your business grow.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {servicesData.map((service, index) => (
             <Link href={service.href} key={index} className="group">
               <Card className="h-full transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl bg-background/50">

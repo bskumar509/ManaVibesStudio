@@ -3,6 +3,18 @@ import { Button } from "@/components/ui/button";
 
 const servicesData = [
   {
+    id: "poster-design",
+    title: "Poster Design",
+    description: "Create eye-catching posters that grab attention and communicate your message effectively. Perfect for events, promotions, and more.",
+    features: [
+      "Custom poster design from scratch",
+      "Multiple design concepts and revisions",
+      "High-resolution files for print and digital",
+      "Designs for various sizes and formats"
+    ],
+    deliverables: "Final poster design files in various formats (JPG, PNG, PDF).",
+  },
+  {
     id: "social-media-marketing",
     title: "Social Media Marketing",
     description: "Our Social Media Marketing services are designed to build your brand's presence across key platforms. We focus on creating engaging content, fostering community interaction, and driving measurable results.",
@@ -73,6 +85,18 @@ const servicesData = [
       "Blog and article writing"
     ],
     deliverables: "Monthly content package with copy, images, and videos.",
+  },
+    {
+    id: "video-editing",
+    title: "Video Editing",
+    description: "Transform your raw footage into polished, professional videos that tell your story and engage your audience.",
+    features: [
+      "Professional video editing and post-production",
+      "Color correction and grading",
+      "Audio mixing and sound design",
+      "Motion graphics and text overlays"
+    ],
+    deliverables: "Fully edited video file in your desired format.",
   },
 ];
 

@@ -14,12 +14,14 @@ import { Loader2, Mail, MapPin, Phone } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
 const services = [
+  "Poster Design",
   "Social Media Marketing",
   "SEO Optimization",
   "Branding & Logo Design",
   "Website Development",
   "Paid Ads (Google / Meta)",
-  "Content Creation"
+  "Content Creation",
+  "Video Editing",
 ];
 
 const initialState: ContactFormState = {
