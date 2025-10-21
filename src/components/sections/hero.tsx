@@ -27,9 +27,6 @@ export function Hero() {
                 <Button asChild size="lg" className="rounded-lg px-8 py-4 text-base" style={{ background: 'linear-gradient(135deg, #6C63FF 0%, #3B3CFF 100%)' }}>
                   <Link href="/contact">Let’s Grow Together</Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="rounded-lg px-8 py-4 text-base">
-                  <Link href="/portfolio">View Portfolio</Link>
-                </Button>
               </div>
             </div>
           </div>

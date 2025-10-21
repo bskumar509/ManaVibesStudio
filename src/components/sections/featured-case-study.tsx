@@ -33,9 +33,6 @@ export function FeaturedCaseStudy() {
                 </p>
               </div>
             </div>
-            <Button asChild className="mt-8" variant="outline">
-              <Link href="/portfolio">See Full Case Study</Link>
-            </Button>
           </div>
           <div className="order-1 md:order-2">
             <Image
