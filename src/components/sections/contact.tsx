@@ -68,15 +68,18 @@ export function Contact() {
                 <div className="space-y-4">
                      <div className="flex items-center gap-4">
                         <Phone className="h-5 w-5 text-accent" />
-                        <a href="tel:+1234567890" className="text-foreground hover:text-accent transition-colors">(123) 456-7890</a>
+                        <div>
+                          <a href="tel:8790104838" className="block text-foreground hover:text-accent transition-colors">8790104838</a>
+                          <a href="tel:7093100179" className="block text-foreground hover:text-accent transition-colors">7093100179</a>
+                        </div>
                      </div>
                       <div className="flex items-center gap-4">
                         <Mail className="h-5 w-5 text-accent" />
-                        <a href="mailto:hello@manavibes.studio" className="text-foreground hover:text-accent transition-colors">hello@manavibes.studio</a>
+                        <a href="mailto:mavibestudio@gmail.com" className="text-foreground hover:text-accent transition-colors">mavibestudio@gmail.com</a>
                      </div>
                       <div className="flex items-start gap-4">
                         <MapPin className="h-5 w-5 text-accent mt-1" />
-                        <p className="text-foreground">123 Creative Lane<br />Vibeville, 12345</p>
+                        <p className="text-foreground">Guntur, Hyderbad</p>
                      </div>
                 </div>
               </div>
