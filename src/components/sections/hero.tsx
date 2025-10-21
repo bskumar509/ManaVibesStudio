@@ -26,7 +26,7 @@ export function Hero() {
               </p>
               <div className="mt-10 flex flex-wrap gap-4">
                 <Button asChild size="lg" className="rounded-lg px-8 py-4 text-base" style={{ background: 'linear-gradient(135deg, #6C63FF 0%, #3B3CFF 100%)' }}>
-                  <Link href="/contact">Let’s Grow Together</Link>
+                  <Link href="/contact">Get in Touch</Link>
                 </Button>
               </div>
             </div>

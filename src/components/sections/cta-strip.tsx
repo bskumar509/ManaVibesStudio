@@ -10,7 +10,7 @@ export function CtaStrip() {
         </h2>
         <div className="mt-8">
             <Button asChild size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-accent">
-                <Link href="/contact">Let's Grow Together</Link>
+                <Link href="/contact">Get in Touch</Link>
             </Button>
         </div>
       </div>

@@ -60,7 +60,7 @@ export function Header() {
 
         <div className="flex items-center gap-4">
           <Button asChild className="hidden md:flex rounded-lg px-6 py-3" style={{ background: 'linear-gradient(135deg, #6C63FF 0%, #3B3CFF 100%)' }}>
-            <Link href="/contact">Let's Grow Together</Link>
+            <Link href="/contact">Get in Touch</Link>
           </Button>
 
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
@@ -92,7 +92,7 @@ export function Header() {
                   ))}
                 </nav>
                  <Button asChild size="lg" className="mt-8 w-full rounded-lg" style={{ background: 'linear-gradient(135deg, #6C63FF 0%, #3B3CFF 100%)' }}>
-                    <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Let's Grow Together</Link>
+                    <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Get in Touch</Link>
                 </Button>
               </div>
             </SheetContent>

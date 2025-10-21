@@ -1,6 +1,8 @@
 
 "use client";
 
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { Mail, MapPin, Phone } from 'lucide-react';
 
 export function Contact() {
@@ -14,25 +16,11 @@ export function Contact() {
                   Get in Touch
                 </h2>
                 <p className="max-w-2xl text-lg text-muted-foreground">
-                  Have a project in mind? We'd love to hear from you. We respond within 24-48 hours.
+                    Have a project in mind or want to learn more about our services? We'd love to hear from you. Please fill out our contact form, and we'll get back to you as soon as possible.
                 </p>
-                <div className="space-y-4 text-muted-foreground">
-                     <div className="flex items-center gap-4">
-                        <Phone className="h-5 w-5 text-accent" />
-                        <span>8790104838, 7093100179</span>
-                     </div>
-                      <div className="flex items-center gap-4">
-                        <Mail className="h-5 w-5 text-accent" />
-                        <a href="mailto:s27k02b2003@gmail.com" className="hover:text-accent transition-colors">s27k02b2003@gmail.com</a>
-                     </div>
-                      <div className="flex items-start gap-4">
-                        <MapPin className="h-5 w-5 text-accent mt-1" />
-                        <div>
-                          <p>Guntur, AP</p>
-                          <p>Hyderabad, TG</p>
-                        </div>
-                     </div>
-                </div>
+                <Button asChild size="lg" className="rounded-lg px-8 py-4 text-base" style={{ background: 'linear-gradient(135deg, #6C63FF 0%, #3B3CFF 100%)' }}>
+                  <Link href="https://forms.gle/8hkCHygPcHVWPHLm6" target="_blank">Contact Us</Link>
+                </Button>
               </div>
           </div>
           <div className="h-96 w-full lg:h-full">

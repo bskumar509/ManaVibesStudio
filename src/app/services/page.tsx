@@ -132,6 +132,9 @@ export default function ServicesPage() {
                          <h3 className="font-semibold text-lg">Deliverables:</h3>
                         <p className="mt-2 text-muted-foreground">{service.deliverables}</p>
                     </div>
+                     <Button asChild className="mt-6 w-full lg:w-auto" style={{ background: 'linear-gradient(135deg, #6C63FF 0%, #3B3CFF 100%)' }}>
+                        <Link href="https://forms.gle/8hkCHygPcHVWPHLm6" target="_blank">Request Service</Link>
+                    </Button>
                 </div>
               </div>
             </section>
