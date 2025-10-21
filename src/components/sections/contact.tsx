@@ -128,7 +128,7 @@ export function Contact() {
                      </div>
                       <div className="flex items-center gap-4">
                         <Mail className="h-5 w-5 text-accent" />
-                        <a href="mailto:mayamakers1@gmail.com" className="hover:text-accent transition-colors">mayamakers1@gmail.com</a>
+                        <a href="mailto:s27k02b2003@gmail.com" className="hover:text-accent transition-colors">s27k02b2003@gmail.com</a>
                      </div>
                       <div className="flex items-start gap-4">
                         <MapPin className="h-5 w-5 text-accent mt-1" />

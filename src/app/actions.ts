@@ -44,7 +44,7 @@ export async function submitContactForm(
   }
   
   try {
-    const res = await fetch('https://formspree.io/f/mavibestudio@gmail.com', {
+    const res = await fetch('https://formspree.io/f/s27k02b2003@gmail.com', {
       method: 'POST',
       body: formData,
       headers: {
