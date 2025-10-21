@@ -70,6 +70,9 @@ export function Employees() {
             )
           })}
         </div>
+        <div className="mt-12 text-center">
+          <p className="text-lg text-muted-foreground italic">And Many More...</p>
+        </div>
       </div>
     </section>
   );
