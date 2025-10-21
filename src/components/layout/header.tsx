@@ -9,8 +9,8 @@ import { Menu, Zap } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { href: "#services", label: "Services" },
-  { href: "#portfolio", label: "Portfolio" },
+  { href: "/#services", label: "Services" },
+  { href: "/portfolio", label: "Portfolio" },
   { href: "#testimonials", label: "Testimonials" },
   { href: "#contact", label: "Contact" },
 ];

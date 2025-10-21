@@ -47,6 +47,24 @@
       "description": "Avatar for Emily C., Founder of Bloom & Co.",
       "imageUrl": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzYwOTE3NDE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman smiling"
+    },
+    {
+      "id": "employee-avatar-1",
+      "description": "Avatar for Alex Johnson, Lead Designer.",
+      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMGJ1c2luZXNzfGVufDB8fHx8MTc2MTUzNTU1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business portrait"
+    },
+    {
+      "id": "employee-avatar-2",
+      "description": "Avatar for Maria Garcia, Project Manager.",
+      "imageUrl": "https://images.unsplash.com/photo-1554780353-348c4b141a49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdCUyMGJ1c2luZXNzfGVufDB8fHx8MTc2MTUzNTU1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business portrait"
+    },
+    {
+      "id": "employee-avatar-3",
+      "description": "Avatar for James Smith, Lead Developer.",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwb3J0cmFpdCUyMGJ1c2luZXNzfGVufDB8fHx8MTc2MTUzNTU1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business portrait"
     }
   ]
 }

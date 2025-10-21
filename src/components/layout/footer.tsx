@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Zap, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const navLinks = [
-    { href: "#services", label: "Services" },
-    { href: "#portfolio", label: "Portfolio" },
+    { href: "/#services", label: "Services" },
+    { href: "/portfolio", label: "Portfolio" },
     { href: "#testimonials", label: "Testimonials" },
     { href: "#contact", label: "Contact Us" },
 ];
