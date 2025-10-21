@@ -12,6 +12,8 @@ export default {
       fontFamily: {
         body: ['var(--font-poppins)', 'sans-serif'],
         headline: ['var(--font-poppins)', 'sans-serif'],
+        sans: ['var(--font-poppins)', 'sans-serif'],
+        alt: ['var(--font-montserrat)', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {

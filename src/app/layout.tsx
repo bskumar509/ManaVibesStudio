@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import { Poppins, Montserrat } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import { Header } from '@/components/layout/header';
@@ -12,9 +12,31 @@ const poppins = Poppins({
   variable: '--font-poppins',
 });
 
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+});
+
 export const metadata: Metadata = {
-  title: 'Manavibes Studio Hub',
-  description: 'Digital Marketing Agency for marketing, branding, and design services.',
+  title: 'ManaVibes Studio — Empowering Brands with Digital Energy',
+  description: 'ManaVibes Studio is a digital marketing agency offering Social Media Marketing, SEO, Branding, Web Development and Paid Ads to startups and small businesses.',
+  openGraph: {
+    title: 'ManaVibes Studio',
+    description: 'Empowering Brands with Digital Energy',
+    type: 'website',
+    url: 'https://yourdomain.com',
+    images: [
+      {
+        url: '/assets/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'ManaVibes Studio',
+      },
+    ],
+  },
+   twitter: {
+    card: 'summary_large_image',
+  },
 };
 
 export default function RootLayout({
@@ -23,8 +45,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="!scroll-auto">
-      <body className={cn('antialiased', poppins.variable)}>
+    <html lang="en" className="!scroll-smooth">
+      <body className={cn('antialiased', poppins.variable, montserrat.variable)}>
         <Header />
         <main className="font-body">{children}</main>
         <Footer />

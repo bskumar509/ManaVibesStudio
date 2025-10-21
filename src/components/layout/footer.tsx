@@ -1,12 +1,12 @@
-
 import Link from "next/link";
 import { Zap, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const navLinks = [
-    { href: "/#services", label: "Services" },
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/services", label: "Services" },
     { href: "/portfolio", label: "Portfolio" },
-    { href: "#testimonials", label: "Testimonials" },
-    { href: "#contact", label: "Contact Us" },
+    { href: "/contact", label: "Contact" },
 ];
 
 const socialLinks = [
@@ -17,16 +17,16 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-secondary/50 text-secondary-foreground">
+    <footer className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto max-w-7xl px-4 py-12 md:px-6">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-2 font-bold text-xl">
               <Zap className="h-6 w-6 text-accent" />
-              <span className="font-headline">Manavibes Studio</span>
+              <span className="font-headline">ManaVibes Studio</span>
             </Link>
             <p className="text-sm text-muted-foreground">
-              Elevating brands in the digital space with creativity and passion.
+              Empowering Brands with Digital Energy
             </p>
           </div>
           <div className="md:col-start-3">
@@ -54,7 +54,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Manavibes Studio. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} ManaVibes Studio. All rights reserved.</p>
         </div>
       </div>
     </footer>
