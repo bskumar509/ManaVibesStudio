@@ -2,16 +2,6 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Employees } from "@/components/sections/employees";
 
-const logoCloud = [
-    { name: 'Company A', logo: 'https://picsum.photos/seed/a/150/50' },
-    { name: 'Company B', logo: 'https://picsum.photos/seed/b/150/50' },
-    { name: 'Company C', logo: 'https://picsum.photos/seed/c/150/50' },
-    { name: 'Company D', logo: 'https://picsum.photos/seed/d/150/50' },
-    { name: 'Company E', logo: 'https://picsum.photos/seed/e/150/50' },
-    { name: 'Company F', logo: 'https://picsum.photos/seed/f/150/50' },
-];
-
-
 export default function AboutPage() {
     return (
         <div className="py-16 md:py-24">
@@ -54,19 +44,15 @@ export default function AboutPage() {
                     <h2 className="text-center font-headline text-3xl font-bold tracking-tight sm:text-4xl">
                         Trusted by Amazing Companies
                     </h2>
-                    <div className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-6">
-                        {logoCloud.map((client) => (
-                            <div key={client.name} className="flex justify-center">
-                                <Image
-                                    className="max-h-12 object-contain"
-                                    src={client.logo}
-                                    alt={client.name}
-                                    width={158}
-                                    height={48}
-                                    data-ai-hint="logo"
-                                />
-                            </div>
-                        ))}
+                    <div className="mt-10 flex justify-center">
+                        <Image
+                            src="https://picsum.photos/seed/clients/1200/300"
+                            alt="Our Clients"
+                            width={1200}
+                            height={300}
+                            className="rounded-lg object-contain"
+                            data-ai-hint="client logos"
+                        />
                     </div>
                 </div>
             </section>
