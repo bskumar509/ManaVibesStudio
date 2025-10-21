@@ -1,5 +1,4 @@
 
-import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -9,7 +8,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Star } from "lucide-react";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const testimonials = [
   {
@@ -54,10 +52,6 @@ const testimonials = [
   }
 ];
 
-const getAvatar = (avatarId: string) => {
-    return PlaceHolderImages.find(img => img.id === avatarId);
-}
-
 const renderStars = (rating: number) => {
   return Array(rating).fill(0).map((_, i) => (
     <Star key={i} className="h-5 w-5 text-accent fill-accent" />
@@ -87,23 +81,12 @@ export function Testimonials() {
           >
             <CarouselContent>
               {testimonials.map((testimonial) => {
-                  const avatar = getAvatar(testimonial.avatarId);
                   return (
                     <CarouselItem key={testimonial.id}>
                       <div className="p-1">
                         <Card className="border-none shadow-none bg-transparent">
                           <CardContent className="flex flex-col items-center text-center p-6">
-                            {avatar && (
-                                <Image
-                                    src={avatar.imageUrl}
-                                    alt={avatar.description}
-                                    width={80}
-                                    height={80}
-                                    data-ai-hint={avatar.imageHint}
-                                    className="rounded-full mb-4 border-2 border-accent"
-                                />
-                            )}
-                            <p className="text-xl font-medium italic text-foreground/90">
+                            <p className="text-xl font-medium italic text-foreground/90 mb-6">
                               "{testimonial.quote}"
                             </p>
                             <div className="mt-4">
