@@ -13,29 +13,45 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const testimonials = [
   {
-    id: "testimonial-1",
-    name: "Sarah L.",
-    title: "CEO, Innovate Inc.",
-    quote: "Manavibes Studio transformed our online presence. Their team is a perfect blend of creativity and strategic thinking. Our engagement has skyrocketed!",
-    rating: 5,
-    avatarId: "testimonial-avatar-1",
-  },
-  {
-    id: "testimonial-2",
-    name: "Mike R.",
-    title: "Marketing Director, TechForward",
-    quote: "Working with Manavibes was a game-changer. They are incredibly passionate and delivered results that exceeded our expectations. Highly recommended!",
+    id: "testimonial-sc",
+    name: "Kayan reddy",
+    title: "Managing Director, Sri Venkata Sai Durga Enterprises",
+    quote: "Their understanding of cultural nuances in social media marketing is exceptional and making the audiance atract through the posts and videos were excellent and good.",
     rating: 5,
     avatarId: "testimonial-avatar-2",
   },
   {
-    id: "testimonial-3",
-    name: "Emily C.",
-    title: "Founder, Bloom & Co.",
-    quote: "The branding they created for us is simply stunning. It perfectly captures our essence. The team was a pleasure to work with from start to finish.",
+    id: "testimonial-ah",
+    name: "Dr. M.Lakshmi Lavanya",
+    title: "Hospital Owner, Aswini Psychotherapy",
+    quote: "The posts and videos you’ve created for us feels so thoughtful and calming—they really reflect the heart of what we do. It’s not just design; it’s meaningful. We’re genuinely happy with how everything is coming together.",
+    rating: 5,
+    avatarId: "testimonial-avatar-1",
+  },
+  {
+    id: "testimonial-mr",
+    name: "Siva Karthik",
+    title: "Managing Director, KSK Constructions",
+    quote: "We’re really impressed with how our Instagram is shaping up. The posts and videos you’ve created for KSK Constructions are clean, professional, and well thought out.",
+    rating: 5,
+    avatarId: "testimonial-avatar-2",
+  },
+  {
+    id: "testimonial-dp",
+    name: "Uday",
+    title: "Proprietor, Varahi Boutique",
+    quote: "The posts and videos are beautifully designed and perfectly reflect our brand. It’s clear that a lot of thought and creativity goes into each one, and we’re really happy with how everything is being maintained.",
     rating: 5,
     avatarId: "testimonial-avatar-3",
   },
+  {
+    id: "testimonial-ps",
+    name: "Ashok",
+    title: "Proprietor, RR BOOKS & Stationery",
+    quote: "Working with them on our Business was incredible. They understood the significance and created content that resonated deeply with our diverse audience.",
+    rating: 5,
+    avatarId: "testimonial-avatar-2",
+  }
 ];
 
 const getAvatar = (avatarId: string) => {
