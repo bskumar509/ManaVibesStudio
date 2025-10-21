@@ -8,36 +8,24 @@ import Link from "next/link";
 const employeeData = [
   {
     id: "employee-1",
-    name: "Alex Johnson",
-    title: "Lead Designer",
+    name: "Uday",
+    title: "CEO & Marketing Expert",
     avatarId: "employee-avatar-1",
-    social: {
-        twitter: "#",
-        linkedin: "#",
-    },
-    bio: "Alex is the creative force behind our most stunning visual designs and brand identities."
+    bio: "Uday leads our team with a passion for marketing and a vision for success, driving strategies that deliver results."
   },
   {
     id: "employee-2",
-    name: "Maria Garcia",
-    title: "Project Manager",
+    name: "Saikumar",
+    title: "Designer & Social Media Expert",
     avatarId: "employee-avatar-2",
-    social: {
-        twitter: "#",
-        linkedin: "#",
-    },
-    bio: "Maria ensures every project is delivered on time, on budget, and exceeds client expectations."
+    bio: "Saikumar combines creative design with social media savvy to build engaging online presences for our clients."
   },
   {
     id: "employee-3",
-    name: "James Smith",
-    title: "Lead Developer",
+    name: "Ashok",
+    title: "Designer",
     avatarId: "employee-avatar-3",
-    social: {
-        twitter: "#",
-        linkedin: "#",
-    },
-    bio: "James brings our web designs to life with clean, efficient code and cutting-edge technology."
+    bio: "Ashok's design skills bring our clients' visions to life with creativity, precision, and a keen eye for detail."
   },
 ];
 
