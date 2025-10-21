@@ -56,18 +56,23 @@ export async function submitContactForm(
       return {
         message: 'Thank you for your message! We will get back to you soon.',
         success: true,
+        errors: {},
       };
     } else {
+       const errorData = await res.json();
+       const errorMessage = errorData.error || 'There was a problem sending your message. Please try again later.';
        return {
-        message: 'There was a problem sending your message. Please try again later.',
+        message: errorMessage,
         success: false,
+        errors: {},
       };
     }
 
   } catch(e) {
     return {
-      message: 'An unexpected error occurred. Please try again.',
+      message: 'An unexpected server error occurred. Please try again.',
       success: false,
+      errors: {},
     }
   }
 }
