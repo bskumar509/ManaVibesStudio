@@ -5,6 +5,7 @@ import { CtaStrip } from "@/components/sections/cta-strip";
 import { ValueProps } from "@/components/sections/value-props";
 import { FeaturedCaseStudy } from "@/components/sections/featured-case-study";
 import { Contact } from "@/components/sections/contact";
+import { PlatformExpertise } from "@/components/sections/platform-expertise";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Services />
       <ValueProps />
       <FeaturedCaseStudy />
+      <PlatformExpertise />
       <Testimonials />
       <CtaStrip />
       <Contact />

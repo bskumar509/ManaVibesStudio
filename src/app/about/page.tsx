@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Employees } from "@/components/sections/employees";
+import { PlatformExpertise } from "@/components/sections/platform-expertise";
 
 export default function AboutPage() {
     return (
@@ -39,23 +40,7 @@ export default function AboutPage() {
             
             <Employees />
 
-            <section id="clients" className="w-full mt-16 md:mt-24">
-                <div className="container mx-auto max-w-7xl px-4 md:px-6">
-                    <h2 className="text-center font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-                        Trusted by Amazing Companies
-                    </h2>
-                    <div className="mt-10 flex justify-center">
-                        <Image
-                            src="https://picsum.photos/seed/clients/1200/300"
-                            alt="Our Clients"
-                            width={1200}
-                            height={300}
-                            className="rounded-lg object-contain"
-                            data-ai-hint="client logos"
-                        />
-                    </div>
-                </div>
-            </section>
+            <PlatformExpertise />
         </div>
     );
 }
