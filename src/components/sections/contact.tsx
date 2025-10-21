@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useFormState, useFormStatus } from 'react-dom';
@@ -147,7 +148,6 @@ export function Contact() {
                     style={{ border: 0 }}
                     allowFullScreen={false}
                     loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
                     title="Guntur Location"
                 ></iframe>
               </div>
